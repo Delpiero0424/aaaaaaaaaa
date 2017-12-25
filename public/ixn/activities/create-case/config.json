@@ -22,7 +22,7 @@
             "outArguments": [
             	{ "caseID":"number" }
 			],			
-			"url": "https://__insert_your_custom_activity_endpoint__/ixn/activities/create-case/execute/",
+			"url": "https://test-66.herokuapp.com/ixn/activities/create-case/execute/",
             "verb": "POST",
             "body": "",
             "header": "",
@@ -32,29 +32,29 @@
         }
     },
     "configurationArguments": {
-    	"applicationExtensionKey": "__activity-key__",
+    	"applicationExtensionKey": "6c225efe-4b7c-4b12-9ff9-196e5f0acd1b",
         "defaults": { "priority": "4"},             
         "save": {
-        	"url": "https://__insert_your_custom_activity_endpoint__/ixn/activities/create-case/save/",
+        	"url": "https://test-66.herokuapp.com/ixn/activities/create-case/save/",
             "body": "",
             "verb": "POST",
             "useJwt": false
         },
         "publish": {
-        	"url": "https://__insert_your_custom_activity_endpoint__/ixn/activities/create-case/publish/",
+        	"url": "https://test-66.herokuapp.com/ixn/activities/create-case/publish/",
             "verb": "POST",
             "body": "",
             "useJwt": false
         },
         "validate": {
-        	"url": "https://__insert_your_custom_activity_endpoint__/ixn/activities/create-case/validate/",
+        	"url": "https://test-66.herokuapp.com/ixn/activities/create-case/validate/",
             "verb": "POST",
             "body": "",
             "useJwt": false            
         }
     },
     "edit": {
-    	"url": "https://__insert_your_custom_activity_endpoint__/ixn/activities/create-case/",
+    	"url": "https://test-66.herokuapp.com/ixn/activities/create-case/",
         "height": 400,
         "width": 500
     }
