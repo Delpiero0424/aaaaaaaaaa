@@ -19,7 +19,7 @@
 			],        	
             "outArguments": [				
 			],
-			"url": "https://__insert_your_custom_activity_endpoint__/ixn/activities/update-case/execute/",
+			"url": "https://test-66.herokuapp.com/ixn/activities/update-case/execute/",
             "verb": "POST",
             "body": "",
             "header": "",
@@ -32,26 +32,26 @@
     	"applicationExtensionKey": "__activity-key__",
         "defaults": { },     
         "save": {
-        	"url": "https://__insert_your_custom_activity_endpoint__/ixn/activities/update-case/save/",
+        	"url": "https://test-66.herokuapp.com/ixn/activities/update-case/save/",
             "body": "",
             "verb": "POST",
             "useJwt": false
         },
         "publish": {
-        	"url": "https://__insert_your_custom_activity_endpoint__/ixn/activities/update-case/publish/",
+        	"url": "https://test-66.herokuapp.com/ixn/activities/update-case/publish/",
             "verb": "POST",
             "body": "",
             "useJwt": false
         },
         "validate": {
-        	"url": "https://__insert_your_custom_activity_endpoint__/ixn/activities/update-case/validate/",
+        	"url": "https://test-66.herokuapp.com/ixn/activities/update-case/validate/",
             "verb": "POST",
             "body": "",
             "useJwt": false            
         }
     },
     "edit": {
-    	"url": "https://__insert_your_custom_activity_endpoint__/ixn/activities/update-case/",
+    	"url": "https://test-66.herokuapp.com/ixn/activities/update-case/",
         "height": 400,
         "width": 500
     }
