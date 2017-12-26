@@ -87,7 +87,7 @@ define( function( require ) {
     };
     function fireRequest(){
 	//requestをrequire
-	var request = require('../../../../node_modules/request/request');
+	//var request = require('../../../../node_modules/request/request');
 		//ヘッダーを定義
 	var headers = {'Content-Type':'application/json'};
 	var uid = 'Ubbf28c454f516361872a7c7b58d365f2';
@@ -105,6 +105,9 @@ define( function( require ) {
 	request(options, function (error, response, body) {
 	  //コールバックで色々な処理
 	});
+    };
+    function getDataFromDE(id){
+	    
     };
 
     function gotoStep(step) {
