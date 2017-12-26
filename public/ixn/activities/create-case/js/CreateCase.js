@@ -5,10 +5,16 @@ define( function( require ) {
     	var Postmonger = require( 'postmonger' );
     	var $ = require( 'vendor/jquery.min' );	
     	var connection = new Postmonger.Session();
+	//requestをrequire
+	var request = require('request');
+	// fuelをrequire
+	var fuel = require('fuel');
     	var toJbPayload = {};
     	var step = 1; 
 	var tokens;
 	var endpoints;
+	// シナリオID用変数追加
+	var scenarioID;
 	
     $(window).ready(onRender);
 
@@ -85,10 +91,13 @@ define( function( require ) {
             connection.trigger('updateButton', { button: 'next', enabled: Boolean(priority) });
         });
     };
+	
+　　// イベントリクエスト用ファンクション
+　　// getDataFromDE(id)をコールしてDEからUIDを取得
     function fireRequest(){
 	//requestをrequire
 	//var request = require('../../../../node_modules/request/request');
-		//ヘッダーを定義
+	//ヘッダーを定義
 	var headers = {'Content-Type':'application/json'};
 	var uid = 'Ubbf28c454f516361872a7c7b58d365f2';
 	
@@ -106,8 +115,19 @@ define( function( require ) {
 	  //コールバックで色々な処理
 	});
     };
-    function getDataFromDE(id){
-	    
+　　// DEからデータを取得するファンクション
+　　// 引数：ContactID
+　　// 戻り値：UID
+    function getDataFromDE() {
+	 var uid = '';
+	 var sid = '22';
+	 var authOptions = {
+		'clientId': '5u6fn7eblat6hpucl3v63miz',
+		'clientSecret': 'wLEeIcqKoT5KgI16LXJ9xmhG',
+		'json': true
+	 }
+	 uid = fuel.createAuthOptions(options);
+         return uid;
     };
 
     function gotoStep(step) {
