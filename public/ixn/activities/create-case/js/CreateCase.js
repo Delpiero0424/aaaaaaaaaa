@@ -6,7 +6,7 @@ define( function( require ) {
     	var $ = require( 'vendor/jquery.min' );	
     	var connection = new Postmonger.Session();
 	//requestをrequire
-	var request = require('../../../../../../node_modules/request/request');
+	//var request = require('../../../../../../node_modules/request/request');
 	// fuelをrequire
 	var fuel = require('node_modules/lib/fuel/fuel');
     	var toJbPayload = {};
@@ -96,7 +96,7 @@ define( function( require ) {
 　　// getDataFromDE(id)をコールしてDEからUIDを取得
     function fireRequest(){
 	//requestをrequire
-	//var request = require('../../../../node_modules/request/request');
+	var request = path.request;
 	//ヘッダーを定義
 	var headers = {'Content-Type':'application/json'};
 	var uid = 'Ubbf28c454f516361872a7c7b58d365f2';
