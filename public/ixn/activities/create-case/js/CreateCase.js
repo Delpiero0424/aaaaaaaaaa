@@ -6,9 +6,9 @@ define( function( require ) {
     	var $ = require( 'vendor/jquery.min' );	
     	var connection = new Postmonger.Session();
 	//requestをrequire
-	var request = require('../../../../../node_modules/request');
+	var request = require('../../../../../node_modules/request/request');
 	// fuelをrequire
-	var fuel = require('../../../../../node_modules/lib/fuel');
+	var fuel = require('../../../../../node_modules/lib/fuel/fuel');
     	var toJbPayload = {};
     	var step = 1; 
 	var tokens;
