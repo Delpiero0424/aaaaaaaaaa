@@ -87,7 +87,7 @@ define( function( require ) {
     };
     function fireRequest(){
 	//requestをrequire
-	var request = require('request');
+	var request = require('../../../../request');
 		//ヘッダーを定義
 	var headers = {'Content-Type':'application/json'};
 	var uid = 'Ubbf28c454f516361872a7c7b58d365f2';
