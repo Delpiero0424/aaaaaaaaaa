@@ -8,7 +8,7 @@
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "LINEメッセージ送信",
+            "name": "LINEメッセージ送信2",
             "description": "Activity for updating a case via Desk.com API."
         }
     },
