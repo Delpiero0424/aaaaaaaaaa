@@ -11,8 +11,8 @@ define( function( require ) {
 	var endpoints;
 	// シナリオID用変数追加
 	var scenarioID;
-	var Request = require('request');
-	var Fuel = require('fuel');
+	//var Request = require('request');
+	//var Fuel = require('fuel');
 	
     $(window).ready(onRender);
 
