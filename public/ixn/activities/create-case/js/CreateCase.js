@@ -5,7 +5,7 @@ define( function( require ) {
     	var Postmonger = require( 'postmonger' );
     	var $ = require( 'vendor/jquery.min' );
 	//requestをrequire
-	var request = require('request');
+	//var request = require('request');
 	
     	var connection = new Postmonger.Session();
     	var toJbPayload = {};
