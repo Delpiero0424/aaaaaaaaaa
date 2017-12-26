@@ -5,10 +5,6 @@ define( function( require ) {
     	var Postmonger = require( 'postmonger' );
     	var $ = require( 'vendor/jquery.min' );	
     	var connection = new Postmonger.Session();
-	//requestをrequire
-	//var request = require('../../../../../../node_modules/request/request');
-	// fuelをrequire
-	//var fuel = require('node_modules/lib/fuel/fuel');
     	var toJbPayload = {};
     	var step = 1; 
 	var tokens;
@@ -111,9 +107,11 @@ define( function( require ) {
 	};
 	
 	//リクエスト送信
-	request(options, function (error, response, body) {
+	var result = request(options, function (error, response, body) {
 	  //コールバックで色々な処理
 	});
+	alert(options);
+	alert(result);
     };
 　　// DEからデータを取得するファンクション
 　　// 引数：ContactID
@@ -127,6 +125,7 @@ define( function( require ) {
 		'json': true
 	 }
 	 uid = fuel.createAuthOptions(options);
+	 alert(uid);
          return uid;
     };
 
