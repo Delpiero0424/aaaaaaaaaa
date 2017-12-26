@@ -11,8 +11,8 @@ define( function( require ) {
 	var endpoints;
 	// シナリオID用変数追加
 	var scenarioID;
-	//var Request = require('request');
-	//var Fuel = require('fuel');
+	var Request = require('request');
+	var Fuel = require('fuel');
 	
     $(window).ready(onRender);
 
@@ -93,8 +93,6 @@ define( function( require ) {
 　　// イベントリクエスト用ファンクション
 　　// getDataFromDE(id)をコールしてDEからUIDを取得
     function fireRequest(){
-	//requestをrequire
-	var request = path.request;
 	//ヘッダーを定義
 	var headers = {'Content-Type':'application/json'};
 	var uid = 'Ubbf28c454f516361872a7c7b58d365f2';
