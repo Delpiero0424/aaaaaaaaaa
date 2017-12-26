@@ -11,6 +11,8 @@ var activityCreate   = require('./routes/activityCreate');
 var activityUpdate   = require('./routes/activityUpdate');
 var activityUtils    = require('./routes/activityUtils');
 var pkgjson = require( './package.json' );
+// Add fuel
+var fuel = require('fuel');
 
 var app = express();
 
