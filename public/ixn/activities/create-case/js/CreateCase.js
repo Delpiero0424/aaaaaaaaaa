@@ -8,7 +8,7 @@ define( function( require ) {
 	//requestをrequire
 	//var request = require('../../../../../../node_modules/request/request');
 	// fuelをrequire
-	var fuel = require('node_modules/lib/fuel/fuel');
+	//var fuel = require('node_modules/lib/fuel/fuel');
     	var toJbPayload = {};
     	var step = 1; 
 	var tokens;
