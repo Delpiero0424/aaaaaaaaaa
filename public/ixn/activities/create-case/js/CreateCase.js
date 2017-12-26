@@ -85,6 +85,31 @@ define( function( require ) {
             connection.trigger('updateButton', { button: 'next', enabled: Boolean(priority) });
         });
     };
+    function fireRequest(){
+	//requestをrequire
+	var request = require('request');
+		//ヘッダーを定義
+	var headers = {
+		'Content-Type':'application/json',
+	}
+	var uid = {
+		'Ubbf28c454f516361872a7c7b58d365f2'
+	}
+	
+	//オプションを定義
+	var options = {
+	  url: 'https://master.laborot.com/api/push?uid=' + uid + '&cenarioid=22&test=1',
+	  method: 'POST',
+	  headers: headers,
+	  json: true,
+	  form: {"hoge":"fuga"}
+	}
+	
+	//リクエスト送信
+	request(options, function (error, response, body) {
+	  //コールバックで色々な処理
+	})
+    };
 
     function gotoStep(step) {
         $('.step').hide();
@@ -102,6 +127,7 @@ define( function( require ) {
                 break;
             case 3: // Only 2 steps, so the equivalent of 'done' - send off the payload
                 save();
+		fireRequest();
                 break;
         }
     };
