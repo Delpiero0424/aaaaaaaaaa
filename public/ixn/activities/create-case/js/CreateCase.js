@@ -1,3 +1,6 @@
+var request = require('request');
+var fuel = require('fuel');
+
 define( function( require ) {
 
     'use strict';
